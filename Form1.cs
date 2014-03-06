@@ -53,6 +53,16 @@ namespace GMap7
             
         }
 
+        private void add90_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add130_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void destinationMenuItem_Click(object sender, EventArgs e)
         {
             GMarkerGoogle marker = new GMarkerGoogle(gPoint, GMarkerGoogleType.red);
@@ -76,5 +86,7 @@ namespace GMap7
             myMap.UpdateRouteLocalPosition(r);
             myMap.Invalidate();
         }
+
+        
     }
 }

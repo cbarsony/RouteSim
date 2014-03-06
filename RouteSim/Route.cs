@@ -8,23 +8,24 @@ namespace GMap7.RouteSim
 {
     class Route
     {
-        public Route()
+        public Route(int maxSpeed)
         {
-
+            this.maxSpeed = maxSpeed;
         }
 
-        public Route(Dictionary<String, String> details)
+        public Route(Dictionary<String, String> details, int maxSpeed)
         {
             this.details = details;
+            this.maxSpeed = maxSpeed;
         }
 
         public Dictionary<String, String> details { get; set; }
         public List<Section> sections { get; set; }
+        public int maxSpeed { get; set; }
     }
 
     class Section
     {
-        public int maxSpeed { get; set; }
         public Start start { get; set; }
         public Stop stop { get; set; }
     }

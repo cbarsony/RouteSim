@@ -95,12 +95,14 @@
             this.add90.Name = "add90";
             this.add90.Size = new System.Drawing.Size(152, 22);
             this.add90.Text = "90";
+            this.add90.Click += new System.EventHandler(this.add90_Click);
             // 
             // add130
             // 
             this.add130.Name = "add130";
             this.add130.Size = new System.Drawing.Size(152, 22);
             this.add130.Text = "130";
+            this.add130.Click += new System.EventHandler(this.add130_Click);
             // 
             // destinationMenuItem
             // 
